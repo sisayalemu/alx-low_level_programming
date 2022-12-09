@@ -18,7 +18,7 @@ for (nr = nl + 1; nr <= 57; nr++)
 	if (nl != 56 || nr != 57)
 	{
 		putchar(',');
-		putchar(' ');
+		putchar(32);
 	}	
 }
 }
