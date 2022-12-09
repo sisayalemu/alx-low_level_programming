@@ -4,23 +4,25 @@
  *
  * Return: Always 0 (success)
  */
-int main(void) 
+int main(void)
 {
-  int nl;
-  int nr;
+	int a;
+	int b;
 
- for (nl = 48; nl <= 56; nl++) 
- {
-	for (nr = nl + 1; nr <= 57; nr++)
-        {
-	       	putchar(nl);
-	        putchar(nr);
-	       	if (nl != 56 || nr != 57)
-	       	{
-			putchar(',');
-			putchar(32);
+	for (a = 48; a <= 56; a++)
+	{
+		for (b = a + 1; b <= 57; b++)
+		{
+			putchar(a);
+			putchar(b);
+
+			if (a != 48; || a != 56)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
 	return (0);
- }
+}
