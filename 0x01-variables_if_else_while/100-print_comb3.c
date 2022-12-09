@@ -16,17 +16,16 @@ int main(void)
 	{
 		for (nr = nl + 1; nr <= 57; nr++)
 		{
-			if (nl > nr)
-			{
-				putchar(nl);
-				putchar(nr);
+			
+			putchar(nl);
+			putchar(nr);
 
-				if (nl != 56 || nr != 57)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			if (nl != 56 || nr != 57)
+			{
+				putchar(',');
+				putchar(' ');
 			}
+			
 		}
 	}
 
