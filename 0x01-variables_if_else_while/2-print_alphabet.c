@@ -15,12 +15,12 @@ int main(void)
 
 	while (a_z <= 'z')
 	{
-		putchar(a_z);
+		putchar (a_z);
 		a_z++;
 
 	}
 
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 
 }
