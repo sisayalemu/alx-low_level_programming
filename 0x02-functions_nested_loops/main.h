@@ -4,7 +4,7 @@
 /*
  * file: main.h
  *
- * description: file containing all function prototype
+ * Desc: file containing all function prototype
  */
 
 int _putchar(char c);
