@@ -1,17 +1,18 @@
 #include "main.h"
 /**
- *print_last_digit - print the last digit
- *@n: variable to be checked
+ *print_last_digit - print the last digit of a number
+ *@n: variable to be tested
  *Return: Always 0 (success)
  */
 int print_last_digit(int n)
 {
-	int a;
-	if (n < 0)
-		n = -n;
-		a = n % 10;
-	if (a < 0)
-		a = -a;
-		_putchar(a + '0');
-		return (a);
+	int ld;
+
+	ld = n % 10;
+	if (ld < 0)
+	{
+		ld *= -1;
+	}
+	_putchar('0' + ld);
+	return (ld);
 }
