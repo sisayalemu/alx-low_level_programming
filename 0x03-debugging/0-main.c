@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *main - test func for pstive or negative
- *Return: 0
+ * main - test func for pstive or negative
+ * Return: 0
  */
 int main(void)
 {
