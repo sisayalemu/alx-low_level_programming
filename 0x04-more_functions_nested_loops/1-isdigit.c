@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _isdigit - chech for is it digit or not
- * @c: var to check for 
- * Return: 1 or 0
+ *_isdigit - chech for is it digit or not
+ *@c: var to check for 
+ *Return: 1 or 0
  */
 
 int _isdigit(int c)
