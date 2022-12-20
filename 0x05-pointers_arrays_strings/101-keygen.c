@@ -16,6 +16,7 @@ int main(void)
 	time_t t;
 
 	a = 0;
+	asc = 2772;
 
 	srand((int) time(&t));
 
