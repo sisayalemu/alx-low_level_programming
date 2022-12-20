@@ -2,6 +2,7 @@
 /**
  * _atoi - a function which convert string into an integer
  * @s: variable being used
+ * Return: it return an integer
  */
 int _atoi(char *s)
 {
@@ -13,7 +14,7 @@ int _atoi(char *s)
 	a = 0;
 	output = 0;
 
-	while (!(s[a] <= '9' && s[a] >= 0) && s[a] != '\0')
+	while (!(s[a] <= '9' && s[a] >= '0') && s[a] != '\0')
 	{
 		if (s[a] == '-')
 			opre *= -1;
