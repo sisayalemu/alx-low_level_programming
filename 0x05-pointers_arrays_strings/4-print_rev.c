@@ -3,7 +3,7 @@
  * print_rev - a function that reverse a string
  * @s: variable being store a string
  */
-void print_env(char *s)
+void print_rev(char *s)
 {
 	int i = 0;
 	int len;
