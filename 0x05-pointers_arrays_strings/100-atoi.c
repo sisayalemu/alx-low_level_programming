@@ -5,8 +5,13 @@
  */
 int _atoi(char *s)
 {
-	int opre = 1; a = 0;
-	unsigned int output = 0;
+	int opre;
+	int a;
+	unsigned int output;
+
+	opre = 1;
+	a = 0;
+	output = 0;
 
 	while (!(s[a] <= '9' && s[a] >= 0) && s[a] != '\0')
 	{
