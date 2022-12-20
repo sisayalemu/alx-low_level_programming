@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * swao_int - function that swap two number
+ * swap_int - function that swap two number
  * @a: var a to be inputed
  * @b: var b to be inputed
  */
