@@ -19,8 +19,7 @@ int _atoi(char *s)
 		if (s[a] == '-')
 			opre *= -1;
 		a++;
-	}
-	
+	}	
 	while (s[a] <= '9' && (s[a] >= '0' && s[a] != '\0'))
 	{
 		output = (output * 10) + (s[a] - '0');
