@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * _strncat - a function for a purpose of two strings
- * @str: the source var for the func
+ * @src: the source var for the func
  * @dest: the destination var for the func
  * @n: var to be used for the number var
  * Return: it will return the concated string
