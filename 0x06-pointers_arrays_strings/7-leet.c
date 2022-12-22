@@ -24,7 +24,7 @@ char *leet(char *s)
 			if (s[a] == x[b])
 			{
 				c = b;
-				s[a] = y[k];
+				s[a] = y[c];
 			}
 			b++;
 		}
