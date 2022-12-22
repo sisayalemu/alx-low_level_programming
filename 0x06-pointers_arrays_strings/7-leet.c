@@ -10,7 +10,7 @@ char *leet(char *s)
 	int b;
 	int c;
 
-	char x[] = "oO1leEaAtT";
+	char x[] = "oOlLeEaAtT";
 	char y[] = "0011334477";
 
 	a = 0;
