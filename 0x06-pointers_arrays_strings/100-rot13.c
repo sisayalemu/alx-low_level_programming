@@ -6,21 +6,24 @@
  */
 char *rot13(char *s)
 {
-	int a = 0;
+	int a;
 
-	while (s[a] != '\0')
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+	char *pt = s;
+
+	while (*s)
 	{
-		while ((s[a] >= 'a' && s[a] >= 'z') ||
-				(s[a] >= 'A' && s[a] <= 'Z'))
+		for (a = 0; a <= 52; a++)
 		{
-			if ((s[a] >= 'a' && s[a] <= 'm') ||
-					(s[a] >= 'A' && s[a] <= 'M'))
-				s[a] += 13;
-			else
-				s[a] -= 13;
-			a++;
+			if (*s == alphabet[a])
+			{
+				*s = ROT13[a];
+				break;
+			}
 		}
-		a++;
+		s++;
 	}
-	return (s);
+	return (pt);
 }
