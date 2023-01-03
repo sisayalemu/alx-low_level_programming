@@ -16,6 +16,6 @@ void print_diagsums(int *a, int size)
 		add1 += *(a + (size * x + x));
 		add2 += *(a + (size * x + size - 1 - x));
 	}
-	printf("%d\n, ", add1);
-	printf("%d ", add2);
+	printf("%d, ", add1);
+	printf("%d\n", add2);
 }
