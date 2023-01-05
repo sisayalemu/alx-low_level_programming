@@ -29,7 +29,7 @@ int pal(char *s, int pos)
 		return (1);
 	}
 
-	if (*s == *(s + l))
+	if (*s == *(s + pos))
 	{
 		return (pal(s + 1, pos - 2));
 	}
