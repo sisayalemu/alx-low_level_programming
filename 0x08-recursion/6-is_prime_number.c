@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * find_prime - function for finding a prime
- * @n: variable for integer
- * @m: variable for integer
+ * @x: variable for integer
+ * @y: variable for integer
  * Return: it output a boolean value
  */
 
