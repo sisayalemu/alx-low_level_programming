@@ -6,13 +6,13 @@
  * Return: it output a boolean value
  */
 
-int divisors(int x, int y)
+int find_prime(int x, int y)
 {
 	if (x % y == 0)
 	{
 		return (0);
 	}
-	else if (x / 2 > n)
+	else if (x / 2 > y)
 	{
 		return (find_prime(y + 2, x));
 	}
