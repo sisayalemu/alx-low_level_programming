@@ -1,33 +1,41 @@
 #include "main.h"
 /**
- * find_prime - a function for finding for prime
- * @x: variable foe integer input
- * @y: variable for integer input
- * Return: it outputs a boolean value
+ * find_prime - function for finding a prime
+ * @n: variable for integer
+ * @m: variable for integer
+ * Return: it output a boolean value
  */
-int find_prime(int x, int y)
+
+int divisors(int x, int y)
 {
 	if (x % y == 0)
 	{
 		return (0);
 	}
-	if (y == 1)
+	else if (x / 2 > n)
 	{
-		return (0);
+		return (find_prime(y + 2, x));
 	}
-	
-	return (find_prime(x, y - 1));
+	else
+	{
+		return (1);
+	}
 }
+
 /**
- * is_prime_number - function for printing prime numbers
- * @n: variable for  integer
- * Return: prime num after recursion
+ * is_prime_number - funtion return a prime num
+ * @n: variable  for integer
+ * Return: after recursion it result prime num
  */
+
 int is_prime_number(int n)
 {
-	if (n < 3)
+	if ((!(n % 2) && n != 2) || n < 2)
 	{
 		return (0);
 	}
-	return (find_prime(n, n - 1));
+	else
+	{
+		return (find_prime(3, n));
+	}
 }
