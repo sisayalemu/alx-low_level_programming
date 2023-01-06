@@ -26,3 +26,4 @@ int main(int argc, char *argv[])
 	printf("%d\n", multi);
 
 	return (0);
+}
