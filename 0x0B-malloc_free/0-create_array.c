@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- * create_array - function that creates an array of chars\
- * @size: int variable for length
+ * create_array - function that creates an array of chars
+ * @size: variable for integer
  * @c: char variable
  * Return: it return an array
  */
