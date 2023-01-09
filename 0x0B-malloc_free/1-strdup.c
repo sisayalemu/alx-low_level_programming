@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	if (str == NULL || text == NULL)
 		return (NULL);
 
-	for (a = 0; str[a] != '\0'; a++)
+	for (a = 0; str[a]; a++)
 	{
 		text[a] = str[a];
 		length++;
