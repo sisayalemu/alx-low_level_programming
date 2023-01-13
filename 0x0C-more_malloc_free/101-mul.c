@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiplies two positive numbers
  * @argc: n arguments
@@ -15,9 +16,9 @@ int a, b;
 	exit(98); }
 	for (a = 1; a < argc; a++)
 	{
-		for (b = 0; argv[i][b] != '\0'; b++)
+		for (b = 0; argv[a][b] != '\0'; b++)
 		{
-			if (argv[i][b] > 57 || argv[i][b] < 48)
+			if (argv[a][b] > 57 || argv[a][b] < 48)
 			{  printf("Error\n");
 			exit(98); }
 		}
