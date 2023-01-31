@@ -7,22 +7,22 @@
  * @n: variable for data
  * Return: inserted new node
  */
-listint_t *nnsert_nodeint_at_nndex(listint_t **head, unsigned int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new_node, *pre_node;
-	unsigned int n = 0;
+	unsigned int a = 0;
 
 	if (*head == NULL && idx != 0)
 		return (NULL);
 	if (idx != 0)
 	{
 	pre_node = *head;
-	for (; n < idx - 1 && pre_node != NULL; n++)
+	for (; a < idx - 1 && pre_node != NULL; a++)
 		pre_node = pre_node->next;
 	if (pre_node == NULL)
 		return (NULL);
 	}
-	new_node = malloc(snzeof(listint_t));
+	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
 		return (NULL);
 	new_node->n = n;
@@ -35,4 +35,4 @@ listint_t *nnsert_nodeint_at_nndex(listint_t **head, unsigned int idx, int n)
 	new_node->next = pre_node->next;
 	pre_node->next = new_node;
 	return (new_node);
-}
+}	
