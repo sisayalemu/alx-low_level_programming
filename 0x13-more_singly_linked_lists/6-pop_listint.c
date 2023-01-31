@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
-/*
+/**
  * pop_listint - function remove first ele of node
  * @head: variable for pointing to a list
  * Return: an integer
