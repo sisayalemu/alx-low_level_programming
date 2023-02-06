@@ -10,6 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int file;
 	int r, w;
 	char *buffer;
+
 	if (!filename)
 		return (0);
 	file = open(filename, O_RDONLY);
