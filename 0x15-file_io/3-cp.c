@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	file_write = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while ((x = read(file_read, buf, BUFSIZ)) > 0)
+	while ((a = read(file_read, buf, BUFSIZ)) > 0)
 	{
 		if (file_write < 0 || write(file_write, buf, a) != a)
 		{
